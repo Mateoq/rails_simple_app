@@ -57,3 +57,5 @@ group :test do
 	gem 'cucumber-rails'
 	gem 'database_cleaner'
 end
+
+ruby '2.2.2'
