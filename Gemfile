@@ -56,6 +56,8 @@ group :test do
 	gem 'factory_girl_rails'
 	gem 'cucumber-rails'
 	gem 'database_cleaner'
+  gem 'rb-inotify'
+  gem 'libnotify'
 end
 
 ruby '2.2.2'
