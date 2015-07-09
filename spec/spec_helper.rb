@@ -1,6 +1,7 @@
 require 'rubygems'
 #uncomment the following line to use spork with the debugger
 #require 'spork/ext/ruby-debug'
+require 'capybara'
 
 # --- Instructions ---
 # Sort the contents of this file into a Spork.prefork and a Spork.each_run
@@ -75,6 +76,8 @@ RSpec.configure do |config|
     # `true` in RSpec 4.
     mocks.verify_partial_doubles = true
   end
+
+  config.include Capybara::DSL
 
 # The settings below are suggested to provide a good initial experience
 # with RSpec, but feel free to customize to your heart's content.
